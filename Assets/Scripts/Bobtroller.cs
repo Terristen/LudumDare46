@@ -95,6 +95,10 @@ public class Bobtroller : MonoBehaviour
 
     private void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+
         //Checked for Death
         if(Health <= 0)
         {
